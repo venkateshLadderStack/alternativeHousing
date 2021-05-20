@@ -1,7 +1,46 @@
 import { StaticImage } from "gatsby-plugin-image"
-import React from "react"
+import React, { useEffect } from "react"
+import AOS from "aos"
+import Slider from "react-slick"
+import heroImg1 from "../assets/img/hero-img.webp"
+import heroImg2 from "../assets/img/hero-img2.webp"
+import heroImg3 from "../assets/img/hero-img3.webp"
+import mobileImg from "../assets/img/mobil.png"
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({
+      // Global settings:
+      disable: false, // accepts following values: 'phone', 'tablet', 'mobile', boolean, expression or function
+      startEvent: "DOMContentLoaded", // name of the event dispatched on the document, that AOS should initialize on
+      initClassName: "aos-init", // class applied after initialization
+      animatedClassName: "aos-animate", // class applied on animation
+      useClassNames: false, // if true, will add content of `data-aos` as classes on scroll
+      disableMutationObserver: false, // disables automatic mutations' detections (advanced)
+      debounceDelay: 50, // the delay on debounce used while resizing window (advanced)
+      throttleDelay: 99, // the delay on throttle used while scrolling the page (advanced)
+
+      // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
+      offset: 120, // offset (in px) from the original trigger point
+      delay: 0, // values from 0 to 3000, with step 50ms
+      duration: 400, // values from 0 to 3000, with step 50ms
+      easing: "ease", // default easing for AOS animations
+      once: false, // whether animation should happen only once - while scrolling down
+      mirror: false, // whether elements should animate out while scrolling past them
+      anchorPlacement: "top-bottom", // defines which position of the element regarding to window should trigger the animation
+    })
+  })
+
+  const settings = {
+    dots: false,
+    arrows: false,
+    fade: true,
+    infinite: true,
+    autoplay: true,
+    speed: 2000,
+    autoplaySpeed: 2000,
+  }
+
   return (
     <>
       <div className="hero-area">
@@ -23,32 +62,29 @@ const Hero = () => {
                 </div>
                 <div className="hero-inner">
                   <div className="hero-img">
-                    <StaticImage
-                      src="../assets/img/hero-img.webp"
-                      layout="constrained"
-                      placeholder="blurred"
-                      alt=""
-                    />
-                    <StaticImage
-                      src="../assets/img/hero-img2.webp"
-                      layout="constrained"
-                      placeholder="blurred"
-                      alt=""
-                    />
-                    <StaticImage
-                      src="../assets/img/hero-img3.webp"
-                      layout="constrained"
-                      placeholder="blurred"
-                      alt=""
-                    />
+                    <Slider
+                      style={{ zIndex: 10, margin: 0, padding: 0 }}
+                      {...settings}
+                    >
+                      <div>
+                        <img className="slider-img" src={heroImg1} alt="" />
+                      </div>
+                      <div>
+                        <img className="slider-img" src={heroImg2} alt="" />
+                      </div>
+                      <div>
+                        <img className="slider-img" src={heroImg3} alt="" />
+                      </div>
+                    </Slider>
                   </div>
                   <div className="mobile-image">
-                    <StaticImage
+                    {/* <StaticImage
                       src="../assets/img/mobil.png"
                       layout="constrained"
                       placeholder="blurred"
                       alt=""
-                    />
+                    /> */}
+                    <img style={{ zIndex: -10 }} src={mobileImg} alt="" />
                   </div>
                   <div className="icon-area">
                     <a
