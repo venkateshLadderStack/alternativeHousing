@@ -3,7 +3,7 @@ import React from "react"
 const TouchArea = () => {
   return (
     <>
-      <div className="touch-area">
+      <div className="touch-area" id="contact">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">

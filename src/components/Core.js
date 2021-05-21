@@ -4,7 +4,7 @@ import React from "react"
 const Core = () => {
   return (
     <>
-      <div className="core-area">
+      <div className="core-area" id="core">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -24,6 +24,7 @@ const Core = () => {
                               alt=""
                               placeholder="blurred"
                               layout="constrained"
+                              objectFit="contain"
                             />
                           </a>
                         </div>
@@ -68,6 +69,7 @@ const Core = () => {
                               alt=""
                               placeholder="blurred"
                               layout="constrained"
+                              objectFit="contain"
                             />
                           </a>
                         </div>
@@ -90,6 +92,7 @@ const Core = () => {
                               alt=""
                               placeholder="blurred"
                               layout="constrained"
+                              objectFit="contain"
                             />
                           </a>
                         </div>

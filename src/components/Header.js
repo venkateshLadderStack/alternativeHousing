@@ -1,5 +1,7 @@
-import { StaticImage } from "gatsby-plugin-image"
+import { StaticImage, GatsbyImage } from "gatsby-plugin-image"
 import React from "react"
+import logo from "../assets/img/logo.webp"
+import { Link } from "react-scroll"
 
 const Header = () => {
   return (
@@ -30,30 +32,53 @@ const Header = () => {
       <div className="overlay"></div>
 
       <div className="header-aera">
-        <div className="container">
+        <div className="container-fluid">
           <div className="row">
             <div className="col-lg-12">
               <div className="header-fx">
                 <div className="header-logo">
-                  <a href="#">
+                  <Link to="hero" smooth={true} duration={500}>
                     <StaticImage
                       src="../assets/img/logo.webp"
-                      alt=""
-                      layout="constrained"
+                      alt="logo"
+                      width={160}
                       placeholder="blurred"
+                      layout="constrained"
+                      objectFit="contain"
                     />
-                  </a>
+                  </Link>
                 </div>
                 <div className="header-menu">
                   <ul>
                     <li>
-                      <a href="#">Core</a>
+                      <Link
+                        style={{ color: "white" }}
+                        to="core"
+                        smooth={true}
+                        duration={500}
+                      >
+                        Core
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">About</a>
+                      <Link
+                        style={{ color: "white" }}
+                        to="about"
+                        smooth={true}
+                        duration={500}
+                      >
+                        About
+                      </Link>
                     </li>
                     <li>
-                      <a href="#">Contact</a>
+                      <Link
+                        style={{ color: "white" }}
+                        to="contact"
+                        smooth={true}
+                        duration={500}
+                      >
+                        Contact
+                      </Link>
                     </li>
                   </ul>
                 </div>

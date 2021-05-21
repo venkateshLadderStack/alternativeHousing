@@ -1,11 +1,14 @@
 import { StaticImage } from "gatsby-plugin-image"
 import React, { useEffect } from "react"
 import AOS from "aos"
+import "aos/dist/aos.js"
+import "aos/dist/aos.css"
 import Slider from "react-slick"
 import heroImg1 from "../assets/img/hero-img.webp"
 import heroImg2 from "../assets/img/hero-img2.webp"
 import heroImg3 from "../assets/img/hero-img3.webp"
 import mobileImg from "../assets/img/mobil.png"
+import { Link } from "react-scroll"
 
 const Hero = () => {
   useEffect(() => {
@@ -43,7 +46,7 @@ const Hero = () => {
 
   return (
     <>
-      <div className="hero-area">
+      <div className="hero-area" id="hero">
         <div className="container">
           <div className="row">
             <div className="col-lg-12">
@@ -58,22 +61,46 @@ const Hero = () => {
                     solutions <br />
                     for better quality living in the Philippines.
                   </p>
-                  <a href="#">LEARN MORE</a>
+                  <Link
+                    to="core"
+                    className="learn-more"
+                    style={{ color: "white" }}
+                  >
+                    LEARN MORE
+                  </Link>
                 </div>
                 <div className="hero-inner">
                   <div className="hero-img">
                     <Slider
-                      style={{ zIndex: 10, margin: 0, padding: 0 }}
+                      style={{ zIndex: 10, marginTop: 0, padding: 0 }}
                       {...settings}
                     >
                       <div>
-                        <img className="slider-img" src={heroImg1} alt="" />
+                        <StaticImage
+                          src="../assets/img/hero-img.webp"
+                          alt=""
+                          placeholder="blurred"
+                          layout="constrained"
+                          objectFit="cover"
+                        />
                       </div>
                       <div>
-                        <img className="slider-img" src={heroImg2} alt="" />
+                        <StaticImage
+                          src="../assets/img/hero-img2.webp"
+                          alt=""
+                          placeholder="blurred"
+                          layout="constrained"
+                          objectFit="cover"
+                        />
                       </div>
                       <div>
-                        <img className="slider-img" src={heroImg3} alt="" />
+                        <StaticImage
+                          src="../assets/img/hero-img3.webp"
+                          alt=""
+                          placeholder="blurred"
+                          layout="constrained"
+                          objectFit="cover"
+                        />
                       </div>
                     </Slider>
                   </div>
@@ -81,10 +108,11 @@ const Hero = () => {
                     {/* <StaticImage
                       src="../assets/img/mobil.png"
                       layout="constrained"
-                      placeholder="blurred"
+                      placeholder="dominantColor"
                       alt=""
+                      objectFit="contain"
                     /> */}
-                    <img style={{ zIndex: -10 }} src={mobileImg} alt="" />
+                    <img src={mobileImg} alt="" />
                   </div>
                   <div className="icon-area">
                     <a
