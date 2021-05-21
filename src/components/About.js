@@ -6,10 +6,10 @@ const About = () => {
     <>
       <div className="walpapper">
         <div className="about-area">
-          <div className="container">
+          <div className="container" id="about">
             <div className="row">
               <div className="col-lg-12">
-                <div className="about-wrap" id="about">
+                <div className="about-wrap">
                   <div className="about-title">
                     <h3>ABOUT</h3>
                   </div>

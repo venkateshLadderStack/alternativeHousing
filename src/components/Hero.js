@@ -10,6 +10,8 @@ import heroImg3 from "../assets/img/hero-img3.webp"
 import mobileImg from "../assets/img/mobil.png"
 import { Link } from "react-scroll"
 
+//Hero component
+
 const Hero = () => {
   useEffect(() => {
     AOS.init({
@@ -34,6 +36,7 @@ const Hero = () => {
     })
   })
 
+  //settings for react slick carousel
   const settings = {
     dots: false,
     arrows: false,
@@ -71,8 +74,13 @@ const Hero = () => {
                 </div>
                 <div className="hero-inner">
                   <div className="hero-img">
+                    {/* React slick carousel and styles added for slider here itself because of changing in css file leading to errors */}
                     <Slider
-                      style={{ zIndex: 10, marginTop: 0, padding: 0 }}
+                      style={{
+                        zIndex: 10,
+                        marginBottom: 0,
+                        paddingTop: "20%",
+                      }}
                       {...settings}
                     >
                       <div>
@@ -104,6 +112,7 @@ const Hero = () => {
                       </div>
                     </Slider>
                   </div>
+                  {/* Mobile img inder carousel */}
                   <div className="mobile-image">
                     {/* <StaticImage
                       src="../assets/img/mobil.png"
@@ -114,6 +123,8 @@ const Hero = () => {
                     /> */}
                     <img src={mobileImg} alt="" />
                   </div>
+
+                  {/* All icons around carousel */}
                   <div className="icon-area">
                     <a
                       data-aos-delay="50"
