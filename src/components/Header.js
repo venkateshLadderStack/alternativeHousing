@@ -41,9 +41,8 @@ const Header = () => {
                     <StaticImage
                       src="../assets/img/logo.webp"
                       alt="logo"
-                      width={160}
                       placeholder="blurred"
-                      layout="constrained"
+                      layout="fixed"
                       objectFit="contain"
                     />
                   </Link>
