@@ -1,0 +1,494 @@
+
+
+/* XL Device :1200px. */
+@media (min-width: 1200px) and (max-width: 1449px) {
+
+
+    .hero-content h3 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .hero-area {
+        background: #193051;
+        height: 964px;
+        padding-top: 140px;
+    }
+    .touch-area {
+        padding: 100px 0;
+        background: #193051;
+    }
+
+
+
+
+
+
+
+
+
+}
+
+/* LG Device :992px. */
+@media (min-width: 992px) and (max-width: 1200px) {
+
+
+    .hero-content h3 {
+        font-size: 40px;
+        font-weight: 400;
+    }
+    .hero-area {
+        background: #193051;
+        height: 964px;
+        padding-top: 140px;
+    }
+    .touch-area {
+        padding: 80px 0;
+        background: #193051;
+    }
+    .cour-title h3 {
+        font-size: 40px;
+        line-height: 1.4em;
+        margin: 0;
+        letter-spacing: 0.3em;
+        font-weight: 500;
+    }
+    .about-title h3 {
+        font-size: 40px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+    }
+    .about-area {
+        position: relative;
+        padding-top: 300px;
+        padding-bottom: 80px;
+    }
+    .about-hdn h3 {
+        letter-spacing: 0.1em;
+        line-height: 0.9em;
+        font-size: 111px;
+        font-weight: 700;
+        margin: 0;
+    }
+
+
+
+
+
+
+
+
+
+
+}
+
+ 
+/* MD Device :768px. */
+@media (min-width: 768px) and (max-width: 991px) {
+
+ 
+
+    .hero-content h3 {
+        font-size: 30px;
+        font-weight: 400;
+    }
+    .hero-area {
+        background: #193051;
+        height: 928px;
+        padding-top: 140px;
+    }
+    .touch-area {
+        padding: 80px 0;
+        background: #193051;
+    }
+    .cour-title h3 {
+        font-size: 30px;
+        line-height: 1.4em;
+        margin: 0;
+        letter-spacing: 0.3em;
+        font-weight: 500;
+    }
+    .about-title h3 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+    }
+    .about-area {
+        position: relative;
+        padding-top: 203px;
+        padding-bottom: 80px;
+    }
+    .about-hdn h3 {
+        letter-spacing: 0.1em;
+        line-height: 0.9em;
+        font-size: 90px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .ic2 {
+        font-size: 20px;
+        top: 91px;
+        left: 9%;
+    }
+    .ic1 {
+        top: 26px;
+        left: 23%;
+        font-size: 20px;
+    }
+    .ic5 {
+        position: absolute;
+        top: 77%;
+        left: 21%;
+        font-size: 20px;
+        color: #fff;
+    }
+    .ic6 {
+        font-size: 20px;
+        bottom: 8%;
+        left: 44px;
+    }
+    .propraty-span span {
+        font-size: 80px;
+    }
+    .propraty-span {
+        position: absolute;
+        top: -77px;
+        left: -55px;
+    }
+    .proparty-wrap {
+        width: 596px;
+        margin: auto;
+        padding-top: 90px;
+    }
+    .cour-title::before {
+        height: 92px;
+        content: "";
+        bottom: -61px;
+    }
+    .propaty-fx.dfl-fx::before {
+        width: 2px;
+        height: 92px;
+        content: "";
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -149px;
+    }
+    .propraty-span.spn-2 {
+        left: 153px;
+        top: -70px;
+    }
+    .about-area::before {
+        position: absolute;
+        width: 2px;
+        height: 92px;
+        top: 51px;
+    }
+    .about-title {
+        margin-bottom: 20px;
+    }
+    .ic12 {
+        top: 77%;
+        right: 23%;
+        font-size: 20px;
+    }
+    .ic8 {
+        top: 26px;
+        right: 23%;
+    }
+    .ic9 {
+        font-size: 20px;
+        top: 91px;
+        right: 10%;
+    }
+
+
+
+
+
+
+
+
+}
+ 
+
+/* SM Small Device :320px. */
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+    .hero-content h3 {
+        font-size: 24px;
+        font-weight: 400;
+    }
+    .hero-area {
+        background: #193051;
+        height: 725px;
+        padding-top: 100px;
+    }
+    .touch-area {
+        padding: 40px 0;
+        background: #193051;
+    }
+
+    .cour-title h3 {
+        font-size: 30px;
+        line-height: 1.4em;
+        margin: 0;
+        letter-spacing: 0.3em;
+        font-weight: 500;
+    }
+    .about-title h3 {
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 0.3em;
+    }
+    .about-area {
+        position: relative;
+        padding-top: 60px;
+        padding-bottom: 48px;
+    }
+    .about-hdn h3 {
+        letter-spacing: 0.1em;
+        line-height: 0.9em;
+        font-size: 90px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .ic2 {
+        font-size: 20px;
+        top: 91px;
+        left: 2%;
+        font-size: 13px;
+    }
+    .ic1 {
+        top: 26px;
+        left: 11%;
+        font-size: 14px;
+    }
+    .ic5 {
+        position: absolute;
+        top: 77%;
+        left: 0%;
+        font-size: 14px;
+        color: #fff;
+    }
+    .ic6 {
+        font-size: 14px;
+        bottom: -3%;
+        left: 38px;
+    }
+    .propraty-span span {
+        font-size: 47px;
+    }
+    .propraty-span {
+        position: absolute;
+        top: -32px;
+        left: 57px;
+    }
+    .proparty-wrap {
+        width: 100%;
+        margin: auto;
+        padding-top: 30px;
+    }
+    .cour-title::before {
+        height: 58px;
+        content: "";
+        bottom: -14px;
+    }
+    .propaty-fx.dfl-fx::before {
+        width: 2px;
+        height: 59px;
+        content: "";
+        left: 0;
+        right: 0;
+        margin: auto;
+        top: -63px;
+    }
+    .propraty-span.spn-2 {
+        left: 229px;
+        top: -34px;
+    }
+    .about-area::before {
+        position: absolute;
+        width: 2px;
+        height: 60px;
+        top: 18px;
+    }
+    .about-title {
+        margin-bottom: 20px;
+    }
+    .ic12 {
+        top: 77%;
+        right: 10%;
+        font-size: 15px;
+    }
+    .ic8 {
+        top: 26px;
+        right: 9%;
+        font-size: 14px;
+    }
+    .ic9 {
+        font-size: 14px;
+        top: 91px;
+        right: 12%;
+    }
+    .header-logo a img {
+        max-width: 110px;
+    }
+
+    .hero-img {
+        text-align: center;
+        width: 197px;
+        margin: auto;
+        margin-top: 10px;
+        z-index: 9;
+        top: 43px;
+    }
+    .mobile-image img {
+        max-width: 218px;
+    }
+    .ic7 {
+        position: absolute;
+        font-size: 14px;
+        color: #fff;
+        bottom: -46px;
+        left: 6%;
+        z-index: 999999999;
+    }
+    .ic4 {
+        font-size: 15px;
+        top: 54%;
+        left: 7%;
+    }
+    .ic11 {
+        font-size: 14px;
+        top: 56%;
+        right: 2%;
+    }
+    .ic10 {
+        font-size: 14px;
+        top: 39%;
+        right: 0%;
+    }
+    .ic13 {
+        font-size: 14px;
+        bottom: 2%;
+        right: 0px;
+    }
+    .ic14 {
+        font-size: 14px;
+        bottom: -46px;
+        right: 10%;
+    }
+    .core-area {
+        padding-top: 70px;
+    }
+    .propaty-fx {
+        display: block;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .propaty-icon a {
+        width: 180px;
+        height: 180px;
+        margin-bottom: 20px;
+        margin: auto;
+        margin-top: 45px;
+    }
+    .propaty-icon a img {
+        max-width: 50px;
+    }
+    .proparty-content {
+        max-width: 100%;
+        text-align: center;
+        margin-top: 10px;
+    }
+    .proparty-content h5 {
+        font-size: 19px;
+        margin-bottom: 6px;
+        font-weight: 600;
+    }
+    .propaty-fx.dfl-fx {
+        margin-top: 70px;
+        position: relative;
+    }
+    .propaty-fx.dfl-fx.dfl-3 {
+        margin-top: 106px;
+    }
+    .propaty-fx.dfl-fx.dfl-3::before {
+        top: -87px;
+    }
+    .about-fx {
+        display: block;
+        justify-content: space-between;
+        max-width: 100%;
+        margin: auto;
+        margin-top: 20px;
+        position: relative;
+        z-index: 999999999999;
+    }
+    .about-hdn {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .about-hdn h3 {
+        letter-spacing: 0.1em;
+        line-height: 0.9em;
+        font-size: 50px;
+        font-weight: 700;
+        margin: 0;
+    }
+    .about-content-box {
+        width: 1005;
+        box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+        padding: 18px;
+        border-radius: 7px;
+        background: #fff;
+    }
+
+    .touch-title h2 {
+        font-size: 35px;
+    }
+    .touch-contact-wrap {
+        width: 100%;
+        margin-top: 30px;
+    }
+    .single-input-fx {
+        display: block;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .single-input.sing-wd {
+        width: 100%;
+    }
+    .footer-fx {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 100%;
+        display: block;
+        text-align: center;
+    }
+    .about-content-box {
+        width: 100%;
+        box-shadow: var(--shd,0 1px 4px rgba(0,0,0,.6));
+        padding: 18px;
+        border-radius: 7px;
+        background: #fff;
+    }
+
+
+
+
+
+
+
+
+
+ 
+}
+
+
+/* SM Small Device :550px. */
+@media only screen and (min-width: 576px) and (max-width: 767px) {
+
+ 
+}
