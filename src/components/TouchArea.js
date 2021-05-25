@@ -46,8 +46,8 @@ const TouchArea = () => {
                         .required("this field is required"),
                       file: Yup.mixed().optional(),
                     })}
-                    onSubmit={(values, { setSubmitting, resetForm }) => {
-                      axios
+                    onSubmit={ async (values, { setSubmitting, resetForm }) => {
+                      await axios
                         .post(
                           "https://mailthis.to/jay.basco@alternativehg.com",
                           values
